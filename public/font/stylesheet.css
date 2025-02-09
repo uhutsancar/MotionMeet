@@ -1,0 +1,144 @@
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:100;
+	src:local('☺'), url("SFProDisplay-Ultralight.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:100;
+	src:local('☺'), url("SFProDisplay-UltralightItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:200;
+	src:local('☺'), url("SFProDisplay-Thin.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:200;
+	src:local('☺'), url("SFProDisplay-ThinItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:300;
+	src:local('☺'), url("SFProDisplay-Light.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:300;
+	src:local('☺'), url("SFProDisplay-LightItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:400;
+	src:local('☺'), url("SFProDisplay-RegularItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:500;
+	src:local('☺'), url("SFProDisplay-Medium.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:500;
+	src:local('☺'), url("SFProDisplay-MediumItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺'), url("SFProDisplay-Semibold.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:600;
+	src:local('☺'), url("SFProDisplay-SemiboldItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:700;
+	src:local('☺'), url("SFProDisplay-Bold.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:700;
+	src:local('☺'), url("SFProDisplay-BoldItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:800;
+	src:local('☺'), url("SFProDisplay-Heavy.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:800;
+	src:local('☺'), url("SFProDisplay-HeavyItalic.woff2") format("woff2");
+
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:900;
+	src:local('☺'), url("SFProDisplay-Black.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
+	font-weight:900;
+	src:local('☺'), url("SFProDisplay-BlackItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:400;
+	src:url('SFProDisplay-Regular.eot');
+	src:local('☺'), url("SFProDisplay-Regular.woff2") format("woff2");
+	font-display: swap;
+}

@@ -1,0 +1,140 @@
+<header>
+  <section class="uk-container-fluid hevy-header">
+    <div class="menu-header">
+      <div class="uk-container-large main-menu">
+        <nav class="uk-navbar-container">
+          <div class="uk-container-large">
+            <div uk-navbar>
+              <div class="uk-navbar-left">
+                <a
+                  class="uk-navbar-item uk-logo"
+                  href="#"
+                  aria-label="Back to Home"
+                  >Logo</a
+                >
+                <ul class="uk-navbar-nav uk-visible@m">
+                  <li><a href="#">Home</a></li>
+                  <li>
+                    <a href="#"
+                      >Product
+                      <span class="uk-icon uk-navbar-dropdown-arrow"></span
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a routerLink="" class="sublink">Features</a>
+                        </li>
+                        <li><a routerLink="-single">Use Cases</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Articles
+                      <span class="uk-icon uk-navbar-dropdown-arrow"></span
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a routerLink="" class="sublink">Blog</a>
+                        </li>
+                        <li>
+                          <a routerLink="" class="sublink">Guides</a>
+                        </li>
+                        <li>
+                          <a routerLink="" class="sublink"
+                            >Exercise Library</a
+                          >
+                        </li>
+                        <li>
+                          <a routerLink="" class="sublink"
+                            >Personal Training Blog</a
+                          >
+                        </li>
+                        <li>
+                          <a routerLink=""
+                            >Compound vs Isolation Exercises</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Hevy Coach</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </div>
+              <div class="uk-navbar-right">
+                <a
+                  class="uk-navbar-toggle uk-hidden@m"
+                  href="#"
+                  uk-toggle="target: #offcanvas-nav"
+                >
+                  <span uk-navbar-toggle-icon></span>
+                </a>
+                <div class="uk-navbar-item login uk-visible@m">
+                  <form action="javascript:void(0)">
+                    <input
+                      class="uk-input uk-form-width-small"
+                      type="text"
+                      placeholder="Input"
+                      aria-label="Input"
+                    />
+                    <button class="uk-button uk-button-default">Button</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Off-canvas navigation for mobile -->
+  <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="#">Home</a></li>
+        <li class="uk-parent">
+          <a
+            >Product
+            <span class="uk-icon uk-navbar-dropdown-arrow"></span>
+          </a>
+          <ul class="uk-nav-sub">
+            <li><a routerLink="" class="sublink">Features</a></li>
+            <li><a routerLink="-single">Use Cases</a></li>
+          </ul>
+        </li>
+        <li class="uk-parent">
+          <a href="#"
+            >Articles
+            <span class="uk-icon uk-navbar-dropdown-arrow"></span>
+          </a>
+          <ul class="uk-nav-sub">
+            <li><a routerLink="" class="sublink">Blog</a></li>
+            <li><a routerLink="" class="sublink">Guides</a></li>
+            <li>
+              <a routerLink="" class="sublink">Exercise Library</a>
+            </li>
+            <li>
+              <a routerLink="" class="sublink"
+                >Personal Training Blog</a
+              >
+            </li>
+            <li>
+              <a routerLink=""
+                >Compound vs Isolation Exercises</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Hevy Coach</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <form class="uk-search uk-search-default uk-margin-top">
+        <input class="uk-input" type="search" placeholder="Search..." />
+      </form>
+    </div>
+  </div>
+</header>

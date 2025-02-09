@@ -1,0 +1,330 @@
+html,
+body {
+  /* background-color: #f4f4f1 !important; */
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif !important;
+
+  background-color: #ffffff;
+}
+
+.uk-container-large {
+  margin: 0 auto !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+/* header */
+header {
+  z-index: 99;
+  position: relative;
+  background-color: #fff !important;
+}
+
+.hevy-header {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  background-color: #fff !important;
+}
+
+.uk-navbar-left {
+  gap: 70px !important;
+}
+
+.login {
+  position: absolute;
+  right: 0 !important;
+}
+
+.menu-header {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #f2f4f7;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 5px 0px 10px 0px;
+  height: 70px;
+}
+
+.menu-nav {
+  min-height: 50px;
+  margin: 0 auto !important;
+  padding-left: 15px;
+}
+
+.main-menu {
+  padding: 0 15px 0 15px;
+}
+
+.uk-navbar-container {
+  background: transparent !important;
+}
+
+.uk-navbar-nav li {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.uk-navbar-nav li a {
+  color: #191a1b !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.uk-navbar-nav > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔹 Düzeltilen Dropdown Ayarları */
+.uk-navbar-dropdown {
+  opacity: 0; /* Başlangıçta görünmez */
+  visibility: hidden;
+  transform: translateY(-10px); /* Hafif yukarıda başlasın */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 25%) !important;
+  width: 225px !important;
+  border-radius: 10px;
+  background-color: #ffffff !important;
+  position: absolute;
+  left: 0;
+  top: 100%; /* Menü hemen altına yerleşsin */
+  padding: 5px !important;
+}
+
+/* 🔹 Hover olduğunda dropdown aç */
+.uk-navbar-nav > li:hover .uk-navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+/* 🔹 Menü içindeki bağlantılar */
+.uk-nav > li {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.uk-nav > li > a {
+  color: #0a0a0a; /* Yazı rengi */
+  text-decoration: none;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  display: block;
+}
+
+/* 🔹 Linklerin üzerine gelindiğinde */
+.uk-nav > li > a:hover {
+  color: #1d83ea !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+
+/* 🔹 Alt linkler (border ekli) */
+.uk-nav .sublink {
+  border-style: solid !important;
+  border-width: 0px 0px 2px 0px !important;
+  border-color: #f2f4f7 !important;
+}
+
+/* 🔹 Dropdown okun şekli */
+.uk-navbar-dropdown-arrow {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-bottom: 2px solid rgb(0 0 0 / 0.8) !important;
+  border-right: 2px solid rgb(0 0 0 / 0.8) !important;
+  position: relative;
+  right: -3px;
+  top: 0px;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+/* Default styles */
+.uk-navbar-nav > li > a {
+  padding: 0 15px;
+}
+
+.uk-navbar-toggle {
+  display: none;
+}
+
+.uk-offcanvas-bar {
+  display: none;
+}
+
+.uk-offcanvas-overlay.uk-open::before {
+  opacity: 0 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .uk-offcanvas-bar {
+    display: block;
+  }
+  .uk-navbar-nav {
+    display: none;
+  }
+
+  .uk-offcanvas-overlay.uk-open::before {
+    opacity: 1 !important;
+  }
+
+  .uk-navbar-toggle {
+    display: block;
+  }
+
+  .uk-nav-sub {
+    display: none;
+  }
+
+  .uk-parent:hover > .uk-nav-sub {
+    display: block !important;
+  }
+
+  .uk-offcanvas-bar {
+    background-color: #ffffff !important;
+  }
+
+  .uk-nav-default > li > a {
+    color: #0a0a0a !important;
+  }
+
+  .uk-nav-sub {
+    padding-left: 20px;
+  }
+  .uk-nav .sublink {
+    border-style: none !important;
+    border-width: none !important;
+    border-color: none !important;
+  }
+
+  .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a {
+    color: #191a1b !important;
+  }
+
+  .uk-offcanvas-bar .uk-close {
+    color: #0a0a0a !important;
+  }
+
+  .uk-offcanvas-close {
+    position: absolute;
+    z-index: 1000;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    border: none;
+    background: transparent;
+  }
+}
+
+/* footer */
+
+/* footer {
+margin-top: 500px !important;
+} */
+
+.up-divider {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #f2f4f7;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 5px 0px 10px 0px;
+  height: 70px;
+  font-size: 17px;
+}
+
+.low-divider {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #f2f4f7;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 5px 0px 10px 0px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: 50px !important;
+}
+
+footer .main-footer {
+  padding: 0 15px 0 15px;
+}
+
+.main-footer .footer-logo {
+}
+
+.main-footer .footer-social {
+  padding-top: 20px;
+}
+
+.main-footer .footer-link {
+}
+
+.main-footer .footer-link .title {
+  color: #191a1b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+}
+
+.main-footer .footer-link .sublink {
+  padding: 0 !important;
+}
+
+.main-footer .footer-link .sublink li {
+  padding: 7px 0 7px 0;
+}
+
+.main-footer .footer-link .sublink li a {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+}
+
+.copy-right {
+  padding: 15px;
+}
+
+.copy-right .uk-subnav {
+}
+
+.copy-right .uk-subnav li {
+}
+
+.copy-right .uk-subnav li > a {
+  color: #83898f;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.copy-right .text {
+  margin-top: 8px;
+  color: #83898f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+@media screen and (max-width: 991px) {
+  .copy-right .uk-subnav {
+    display: block;
+  }
+  .main-footer .main-link {
+    padding-top: 50px;
+  }
+}
