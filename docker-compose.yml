@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.ssr
+    ports:
+      - "80:80"
