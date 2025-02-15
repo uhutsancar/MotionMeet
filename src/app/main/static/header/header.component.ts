@@ -5,7 +5,7 @@ import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } fro
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLinkActive, RouterLink ,CommonModule],
+  imports: [ RouterLink ,CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
   encapsulation: ViewEncapsulation.None
