@@ -23,7 +23,7 @@ export class LinkService implements OnDestroy {
             this.site = window.location.origin;
         }
         if (isPlatformServer(this.platformId)) {
-            this.site = 'https://motionmeet.com.tr';
+            this.site = 'https://starkyatirim.com.tr';
         }
     }
 

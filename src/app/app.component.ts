@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './core/main/static/header/header.component';
-import { FooterComponent } from './core/main/static/footer/footer.component';
+import { HeaderComponent } from './core/main/loyout/header/header.component';
+import { FooterComponent } from './core/main/loyout/footer/footer.component';
+import { CookieConsentComponent } from "./core/main/loyout/cookie-consent/cookie-consent";
+
 
 
 @Component({
@@ -9,7 +11,12 @@ import { FooterComponent } from './core/main/static/footer/footer.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent, FooterComponent]
+    imports: [
+      RouterOutlet, 
+      HeaderComponent, 
+      FooterComponent, 
+      CookieConsentComponent
+    ]
 })
 export class AppComponent {
   title = 'MotionMeet.web';
