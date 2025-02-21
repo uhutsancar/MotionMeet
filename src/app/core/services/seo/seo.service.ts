@@ -7,8 +7,8 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class SeoService {
   url: string = '';
-  siteName: string = 'Stark Yatırım';
-  prefixSiteName: string = ' - Stark Yatırım';
+  siteName: string = 'MotionMeet';
+  prefixSiteName: string = ' - MotionMeet';
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -65,8 +65,8 @@ export class SeoService {
 
     // Twitter Card
     this.updateOrCreateMetaTag('name', 'twitter:card', 'summary_large_image');
-    this.updateOrCreateMetaTag('name', 'twitter:site', '@StarkYatirim');
-    this.updateOrCreateMetaTag('name', 'twitter:creator', '@StarkYatirim');
+    this.updateOrCreateMetaTag('name', 'twitter:site', '@MotionMeet');
+    this.updateOrCreateMetaTag('name', 'twitter:creator', '@MotionMeet');
   }
 
   private updateOrCreateMetaTag(
