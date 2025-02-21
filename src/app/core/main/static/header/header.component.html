@@ -8,7 +8,7 @@
               <div class="uk-navbar-left">
                 <a
                   class="uk-navbar-item uk-logo"
-                  href="#"
+                [routerLink]="['']"
                   aria-label="Back to Home"
                   >
                 <img src="img/logo/desktop-logo.svg" alt=" Header Logo" width="200" height="80">
@@ -64,7 +64,7 @@
                     </div>
                   </li>
                   <li><a href="#">Hevy Coach</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a [routerLink]="['about-us']">About Us</a></li>
                 </ul>
               </div>
               <div class="uk-navbar-right">
