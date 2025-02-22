@@ -11,8 +11,8 @@ export class AboutUsComponent  {
     constructor(private _seoService: SeoService) {}
     ngOnInit(): void {
       this._seoService.updateSeoTags({
-        title: 'MotionMeet About Us ',
-        description: 'MotionMeet About Us',
+        title: 'About Us MotionMeet',
+        description: 'About Us MotionMeet',
         image: '',
         pageLink: ''
       })
